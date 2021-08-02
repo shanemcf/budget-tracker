@@ -4,6 +4,9 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 const PORT = process.env.PORT || 3001;
+//heroku connection to Atlas
+// mongodb+srv:"shanemcf:<123Password>@cluster0.mqnrf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget";
 
 const app = express();
